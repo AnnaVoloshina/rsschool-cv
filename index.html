@@ -84,8 +84,10 @@
       </div>
       <aside class="right-column">
         <section class="about-myself">
-          <img src="./icons/myself.svg" alt="About Myself Icon" width="20" height="20">
-          <h3>About Myself</h3>
+          <div class="sub-header">
+            <img src="./icons/myself.svg" alt="About Myself Icon" width="30" height="30">
+            <h3>About Myself</h3>
+          </div>
           <p>Having started my career as a layout designer in a local newspaper with minimum skills,
             I became profficient in printing design. My keen interest in printing technologies led me to working
             as a Prepress and DTP Engineer in the largest printing house in my city, where I continued self-learning,
@@ -102,54 +104,58 @@
             proficient Frontend Developer.</p>
         </section>
         <section class="education">
-          <img src="./icons/education.svg" alt="Education Icon" width="20" height="20">
-          <h3>Education</h3>
+          <div class="sub-header">
+            <img src="./icons/education.svg" alt="Education Icon" width="30" height="30">
+            <h3>Education</h3>
+          </div>
           <p><strong>Zaporizhzhya State Engineer Academy</strong></p>
           <p>Electronic Engineering Faculty</p>
           <p>Years: 1998 - 2003</p>
           <p>Specialization: Physical and Biomedical Electronics, Bachelor's degree</p>
         </section>
         <section class="courses">
-          <img src="./icons/courses.svg" alt="Courses" width="20" height="20">
-          <h3>Courses</h3>
+          <div class="sub-header">
+            <img src="./icons/courses.svg" alt="Courses" width="30" height="30">
+            <h3>Courses</h3>
+          </div>
           <ul>
             <li>HTML and CSS Tutorials on w3schools</li>
             <li>JavaScript Manual on learnjavascript.ru</li>
             <li>RS Schools «JavaScript/Front-end. Stage 0»</li>
           </ul>
-          <img src="./images/w3schools-score_small.jpg" alt="W3schools Score" width="400">
+          <img class="score-img" src="./images/w3schools-score_small.jpg" alt="W3schools Score" width="500">
         </section>
         <section class="code-example">
-          <img src="./icons/code.svg" alt="Code Icon" width="20" height="20">
-          <h3>Code example</h3>
+          <div class="sub-header">
+            <img src="./icons/code.svg" alt="Code Icon" width="30" height="30">
+            <h3>Code example</h3>
+          </div>
           <p><strong>Peak array index KATA from CODEWARS:</strong> Given an array of ints, return the index such that
             the sum of the elements to the right of that index equals the sum of the elements to the
             left of that index. If there is no such index, return -1. If there is more than one such index, return the
             left-most index.</p>
           <pre>
             <code>
-              function peak(arr) {
+function peak(arr) {
 
-                for (let i = 1; i &lt; arr.length - 1; i++) {
-                  let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
-                  let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
-                  if (leftSum === rightSum) {
-                    return i;
-                  }
-                }
-                return -1;
-              }
-            </code>
+  for (let i = 1; i &lt; arr.length - 1; i++) {
+    let leftSum = arr.slice(0, i).reduce((accumulator, currentValue) => accumulator + currentValue);
+    let rightSum = arr.slice(i + 1).reduce((accumulator, currentValue) => accumulator + currentValue);
+
+    if (leftSum === rightSum) return i;
+  }
+  return -1;
+}</code>
           </pre>
         </section>
       </aside>
     </div>
     <footer>
-      <a href="https://github.com/AnnaVoloshina">
-        <img src="./icons/github.svg" alt="Github Icon" width="26" height="26">
+      <a class="my-github" href="https://github.com/AnnaVoloshina">
+        <img class="github-icon" src="./icons/github.svg" alt="Github Icon" width="26" height="26">
         <p>Visit my GitHub</p>
       </a>
-      <p>© 2021 Все права защищены</p>
+      <p>© 2021</p>
       <a href="https://rs.school/js/">
         <img src="./icons/rsschool.svg" alt="Rsschool Icon" width="73" height="26">
       </a>
