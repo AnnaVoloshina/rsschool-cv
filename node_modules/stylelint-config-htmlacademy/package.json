@@ -1,0 +1,76 @@
+{
+  "_from": "stylelint-config-htmlacademy",
+  "_id": "stylelint-config-htmlacademy@0.1.10",
+  "_inBundle": false,
+  "_integrity": "sha512-0oLyLuykcG/OA8btVjk8sFNRierH48hVSDYq9QX/xnDDn7Tb7juDnT1qT3RuJizSNZ7q6OEDOMXiqW7ZKVvPOg==",
+  "_location": "/stylelint-config-htmlacademy",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "stylelint-config-htmlacademy",
+    "name": "stylelint-config-htmlacademy",
+    "escapedName": "stylelint-config-htmlacademy",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#DEV:/",
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/stylelint-config-htmlacademy/-/stylelint-config-htmlacademy-0.1.10.tgz",
+  "_shasum": "7710c272ac86968090d78facd82baf28bd166191",
+  "_spec": "stylelint-config-htmlacademy",
+  "_where": "D:\\#RS Schools\\Markdown & Git\\rsschool-cv",
+  "author": {
+    "email": "zyuzin.vitaly@htmlacademy.ru"
+  },
+  "bugs": {
+    "url": "https://github.com/htmlacademy/stylelint-config-htmlacademy/issues"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "stylelint-config-recommended": "^5.0.0"
+  },
+  "deprecated": false,
+  "description": "Stylelint shareable config for the HTML Academy style",
+  "devDependencies": {
+    "stylelint": "13.13.1"
+  },
+  "files": [
+    "index.js"
+  ],
+  "homepage": "https://github.com/htmlacademy/stylelint-config-htmlacademy#readme",
+  "keywords": [
+    "HTMLAcademy",
+    "HTML Academy",
+    "code",
+    "quality",
+    "style",
+    "lint",
+    "linter",
+    "stylelint",
+    "validate",
+    "code style",
+    "strict",
+    "check",
+    "checker",
+    "verify",
+    "enforce",
+    "hint"
+  ],
+  "license": "MIT",
+  "name": "stylelint-config-htmlacademy",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/htmlacademy/stylelint-config-htmlacademy.git"
+  },
+  "scripts": {
+    "css": "stylelint test/css/style.css --config index.js",
+    "less": "stylelint test/less/**/*.less --config index.js --syntax less",
+    "scss": "stylelint test/sass/**/*.scss --config index.js --syntax scss",
+    "test": "npm run css && npm run less && npm run scss"
+  },
+  "version": "0.1.10"
+}
