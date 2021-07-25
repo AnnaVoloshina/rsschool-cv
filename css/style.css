@@ -1,0 +1,210 @@
+:root {
+  --dark-gray-color: #505050;
+  --ligth-gray-color: #777777;
+  --pink-color: #ffd6d2;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f5f5f5;
+}
+
+.container-centered {
+  margin: 20px auto;
+  width: 1024px;
+  font-family: "Cabin", sans-serif;
+  font-size: 18px;
+  line-height: 1.5;
+  background-color: #ffffff;
+  box-shadow: 10px 10px 40px -1px rgba(0, 0, 0, 0.23);
+}
+
+.two-columns {
+  display: flex;
+}
+
+.left-column {
+  width: 42%;
+  color: var(--dark-gray-color);
+  background-color: var(--pink-color);
+}
+
+.right-column {
+  width: 58%;
+  padding: 40px;
+}
+
+header {
+  padding: 30px;
+  text-align: center;
+  background-color: #ffffff;
+}
+
+header img {
+  margin-bottom: 10px;
+  border: 10px solid var(--pink-color);
+  border-radius: 50%;
+}
+
+header h1 {
+  margin-bottom: 10px;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.1;
+  text-transform: uppercase;
+  letter-spacing: 7px;
+}
+
+header h2 {
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+main {
+  padding: 0 40px;
+}
+
+main h3 {
+  width: 136px;
+  margin: 40px auto 20px;
+  padding: 5px 20px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  background-color: var(--dark-gray-color);
+}
+
+main .contacts h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+  transform: translate(0, -50%);
+}
+
+main li {
+  margin-bottom: 10px;
+}
+
+.contacts li img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.contacts li p {
+  display: inline;
+  vertical-align: middle;
+}
+
+.contacts a {
+  text-decoration: none;
+  color: var(--dark-gray-color);
+}
+
+main :not(.contacts) ul {
+  list-style-type: disc;
+  margin-left: 50px;
+}
+
+.language-name {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.right-column .sub-header {
+  display: flex;
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.right-column .about-myself .sub-header {
+  margin-top: 0;
+}
+
+.about-myself p {
+  margin-bottom: 10px;
+  margin-left: 45px;
+}
+
+.about-myself p:last-of-type {
+  margin-bottom: 0;
+}
+
+.right-column h3 {
+  flex: 1;
+  vertical-align: middle;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--ligth-gray-color);
+  border-bottom: 2px solid var(--ligth-gray-color);
+}
+
+.right-column img {
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+.right-column p {
+  color: var(--ligth-gray-color);
+}
+
+.education p {
+  margin-left: 45px;
+}
+
+.education p strong {
+  font-weight: 700;
+}
+
+.courses ul {
+  list-style-type: disc;
+  margin-left: 45px;
+  margin-bottom: 30px;
+}
+
+.courses li {
+  margin-bottom: 10px;
+  color: var(--ligth-gray-color);
+}
+
+.right-column img.score-img {
+  display: block;
+  margin: 0 auto;
+}
+
+.code-example p {
+  margin-left: 45px;
+}
+
+pre {
+  margin-left: -320px;
+  margin-top: 20px;
+  padding-left: 30px;
+  font-family: monospace;
+  font-size: 0.9rem;
+  background-color: #f5f5f5;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: 0.8rem;
+  color: #ffffff;
+  background-color: var(--dark-gray-color);
+}
+
+footer a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+footer .github-icon {
+  margin-right: 10px;
+}
+
+.my-github {
+  display: flex;
+  align-items: center;
+}
